@@ -266,7 +266,7 @@ header .landing p {
 /* start footer */
 footer {
   background-color: var(--Very-dark-black-blue);
-
+  border-radius: 0 100px 0 0;
   color: var(--Grayish-blue);
 }
 
