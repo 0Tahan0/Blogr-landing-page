@@ -28,85 +28,133 @@
     <!-- start header -->
     <header class="overflow-hidden">
       <div class="header-bg pt-3 pb-5">
+        <!-- start nav -->
+        <nav class="navbar navbar-expand-lg mb-5">
+          <div class="container">
+            <span class="navbar-brand" href="#"
+              ><img src="./assets//images/logo.svg" alt="logo"
+            /></span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="toggler-bars-btn"
+            >
+              <i class="fa-solid fa-bars text-white icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-3 mb-2 mb-lg-0 text-center">
+                <li class="nav-item p-2 dropdown">
+                  <a
+                    class="nav-link d-inline"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Product
+                  </a>
+                  <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
+                  <ul
+                    class="dropdown-menu border-0 shadow py-3 px-2 text-center"
+                  >
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Overview</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Pricing</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Marketplace</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Features</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Integrations</a>
+                    </li>
+                  </ul>
+                </li>
 
-      <!-- start nav -->
-      <nav class="navbar navbar-expand-lg mb-5">
-        <div class="container">
-          <span class="navbar-brand" href="#"
-            ><img src="./assets//images/logo.svg" alt="logo"
-          /></span>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            id="toggler-bars-btn"
-          >
-            <i class="fa-solid fa-bars text-white icon"></i>
-          </button>
-          <div
-            class="collapse navbar-collapse "
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mx-3 mb-2 mb-lg-0 text-center">
-              <li class="nav-item p-2">
-                <a class="nav-link d-inline" aria-current="page" href="#"
-                  >Product</a
-                >
-                <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
-              </li>
-              <li class="nav-item p-2">
-                <a class="nav-link d-inline" href="#">Company</a>
-                <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
-              </li>
-              <li class="nav-item p-2 dropdown">
-                <a
-                  class="nav-link d-inline"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Connect
-                </a>
-                <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
-                <ul class="dropdown-menu border-0 shadow py-3 px-2 text-center">
-                  <li class="p-2">
-                    <a class="dropdown-item" href="#">Contact</a>
-                  </li>
-                  <li class="p-2">
-                    <a class="dropdown-item" href="#">Newsletter</a>
-                  </li>
-                  <li class="p-2">
-                    <a class="dropdown-item" href="#">LinkedIn</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="login-box ms-auto d-flex flex-column d-lg-block">
-              <hr class="mx-5 mt-2 d-lg-none" />
-              <button class="btn btn-login border-0 text-white mx-auto my-2">
-                Login
-              </button>
-              <button class="btn main-btn-white mx-auto my-2">Sign up</button>
+                <li class="nav-item p-2 dropdown">
+                  <a
+                    class="nav-link d-inline"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Company
+                  </a>
+                  <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
+                  <ul
+                    class="dropdown-menu border-0 shadow py-3 px-2 text-center"
+                  >
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">About</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Team</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Blog</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Careers</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item p-2 dropdown">
+                  <a
+                    class="nav-link d-inline"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Connect
+                  </a>
+                  <i class="fa-solid fa-angle-down fa-xs ms-2"></i>
+                  <ul
+                    class="dropdown-menu border-0 shadow py-3 px-2 text-center"
+                  >
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Contact</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">Newsletter</a>
+                    </li>
+                    <li class="p-2">
+                      <a class="dropdown-item" href="#">LinkedIn</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="login-box ms-auto d-flex flex-column d-lg-block">
+                <hr class="mx-5 mt-2 d-lg-none" />
+                <button class="btn btn-login border-0 text-white mx-auto my-2">
+                  Login
+                </button>
+                <button class="btn main-btn-white mx-auto my-2">Sign up</button>
+              </div>
             </div>
           </div>
+        </nav>
+        <!-- end nav -->
+        <div class="landing text-center my-5">
+          <h1 class="text-white fw-bold">A modern publishing platform</h1>
+          <p class="fw-bold my-5">
+            Grow your audience and build your online brand
+          </p>
+          <div class="btns-box">
+            <button class="btn main-btn-white mx-1">Start for Free</button>
+            <button class="btn main-btn-transparent mx-1">Learn More</button>
+          </div>
         </div>
-      </nav>
-      <!-- end nav -->
-      <div class="landing text-center my-5">
-        <h1 class="text-white fw-bold">A modern publishing platform</h1>
-        <p class="fw-bold my-5 ">
-          Grow your audience and build your online brand
-        </p>
-        <div class="btns-box">
-          <button class="btn main-btn-white mx-1">Start for Free</button>
-          <button class="btn main-btn-transparent mx-1">Learn More</button>
-        </div>
-      </div>
       </div>
     </header>
     <!-- end header -->
@@ -160,7 +208,9 @@
     <!-- start art -->
     <div class="art mt-5">
       <div class="container">
-        <div class="art-content row align-items-center  text-center text-lg-start px-3">
+        <div
+          class="art-content row align-items-center text-center text-lg-start px-3"
+        >
           <div class="col-sm-12 col-lg-6 position-relative">
             <img
               src="./assets/images/illustration-phones.svg"
@@ -195,7 +245,7 @@
             <img
               src="./assets/images/illustration-laptop-desktop.svg"
               alt="illustration"
-              class="d-none d-lg-block lab-img"
+              class="d-none d-lg-block lab-img "
             />
             <img
               src="./assets/images/illustration-laptop-mobile.svg"
@@ -232,10 +282,10 @@
     <footer class="mt-5 p-5">
       <div class="container">
         <div class="footer-content row text-center text-lg-start">
-          <div class="col-12  col-lg-3 mb-5">
+          <div class="col-12 col-md-3 mb-5">
             <img src="./assets/images/logo.svg" alt="logo" />
           </div>
-          <div class="col-12 col-lg-3 mb-5">
+          <div class="col-12 col-md-3 mb-5">
             <h5 class="text-white">Product</h5>
             <ul class="list-unstyled d-flex flex-column">
               <li class="mb-2"><a href="#">Overview</a></li>
@@ -245,23 +295,21 @@
               <li class="mb-2"><a href="#">Integrations</a></li>
             </ul>
           </div>
-          <div class="col-12  col-lg-3 mb-5">
+          <div class="col-12 col-md-3 mb-5">
             <h5 class="text-white">Company</h5>
             <ul class="list-unstyled d-flex flex-column">
               <li class="mb-2"><a href="#">About</a></li>
               <li class="mb-2"><a href="#">Team</a></li>
               <li class="mb-2"><a href="#">Blog</a></li>
               <li class="mb-2"><a href="#">Careers</a></li>
-
             </ul>
           </div>
-          <div class="col-12  col-lg-3 mb-5">
+          <div class="col-12 col-md-3 mb-5">
             <h5 class="text-white">Connect</h5>
             <ul class="list-unstyled d-flex flex-column">
               <li class="mb-2"><a href="#">Contact</a></li>
               <li class="mb-2"><a href="#">Newsletter</a></li>
               <li class="mb-2"><a href="#">LinkedIn</a></li>
-
             </ul>
           </div>
         </div>
@@ -274,23 +322,3 @@
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-<!-- 
- 
-  ________________________
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-
-
- -->
