@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--Very-dark-grayish-blue);
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  /* Default */
+  font-size: 16px;
+  font-family: Overpass-300;
+}
+/* 
+Background gradient - Intro/CTA mobile nav:
+background: linear-gradient(-45deg ,hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+Background gradient - body:
+background:linear-gradient(-45deg , hsl(13, 100%, 72%) ,hsl(353, 100%, 62%)) ;
+
+} 
+*/
+
+@font-face {
+  font-family: Overpass-300;
+  src: url(./../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Overpass-600;
+  src: url(./../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(./../assets/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(./../assets/fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(./../assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+:root {
+  /* Colors */
+  /* ### Primary */
+  --Links-color: #ffccc4;
+  --Light-red: hsl(356, 100%, 66%); /*CTA-text*/
+  --Very-light-red: hsl(355, 100%, 74%); /*CTA hover background*/
+  --Very-dark-blue: hsl(208, 49%, 24%); /*headings*/
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%); /*text*/
+  --Grayish-blue: hsl(240, 3%, 79%); /*footer text*/
+  --Very-dark-grayish-blue: hsl(207, 13%, 34%); /*body copy*/
+  --Very-dark-black-blue: hsl(240, 10%, 16%); /*footer background*/
+  /* ---------End Colors------------ */
+  --main-transition: 0.3s;
+  --section-margin: 0;
+  --section-padding: 0;
+}
+/* --------------- */
+
+/* start Combonent */
+.info h2 {
+  color: var(--Very-dark-blue);
+}
+.info p {
+  color: var(--Very-dark-grayish-blue);
+}
+/* end Combonent */
+/* Start UI */
+
+.btn {
+  border-radius: 100vmax;
+  font-family: Ubuntu-Bold;
+
+  min-width: 100px;
+  text-transform: capitalize;
+  padding: 0.5rem 1.5rem;
+}
+.main-btn-white {
+  background-color: var(--White);
+  color: var(--Light-red);
+}
+.main-btn-white:active,
+.main-btn-white:hover {
+  background-color: var(--Light-red);
+  color: var(--White) !important;
+}
+/* ---- */
+.main-btn-transparent {
+  background-color: transparent;
+  color: var(--White);
+
+  border: 1px solid var(--White);
+}
+.main-btn-transparent:focus,
+.main-btn-transparent:active,
+.main-btn-transparent:hover {
+  background-color: var(--White) !important;
+  color: var(--Light-red) !important;
+}
+/* End UI */
+/* start header */
+header {
+  background: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-radius: 0 0 0 100px;
+  
+}
+.header-bg {
+  background-image: url(./../assets/images/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width:991px) {
+  .header-bg {
+  background-image: url(./../assets/images/bg-pattern-intro-mobile.svg);
+  }
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+header nav {
+  font-family: Ubuntu-Bold;
+}
+
+header .navbar .navbar-nav .nav-item {
+  cursor: pointer;
+  color: var(--Links-color);
+  transition: var(--main-transition) transform;
+}
+header .navbar .navbar-nav .nav-item:hover {
+  color: var(--White);
+}
+header .navbar .navbar-nav .nav-item:hover > a {
+  text-decoration: underline;
+}
+
+header .navbar .navbar-nav .nav-item svg {
+  color: inherit;
+}
+header .navbar .navbar-nav .nav-item a[aria-expanded="true"] + svg {
+  transform: rotate(180deg);
+}
+header .navbar .navbar-toggler:active,
+header .navbar .navbar-toggler {
+  box-shadow: none;
+  border: none;
+}
+
+header .navbar .dropdown-item:hover {
+  background-color: transparent;
+}
+
+header .navbar .dropdown-item:active {
+  background: transparent;
+}
+@media (max-width: 991px) {
+  header .navbar .navbar-nav .nav-item:hover {
+    color: #000;
+  }
+  header .navbar .navbar-nav .nav-item svg {
+    color: var(--Light-red);
+  }
+  header .navbar .navbar-collapse {
+    background-color: var(--White);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 30%);
+  }
+
+  header .navbar .dropdown-menu {
+    box-shadow: none !important;
+    background-color: var(--Grayish-blue);
+  }
+
+  header .navbar .navbar-nav .nav-item {
+    color: var(--Very-dark-grayish-blue);
+  }
+  .login-box .btn-login {
+    color: var(--Very-dark-grayish-blue) !important;
+  }
+  .login-box .main-btn-white {
+    background: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: var(--White);
+  }
+}
+
+/* end header */
+
+/* --------------- */
+/* start landing*/
+header .landing p {
+  color: var(--Links-color);
+}
+/* end landing */
+/* --------------- */
+
+/* --------------- */
+/* start designed */
+.designed .heading h1 {
+  color: var(--Very-dark-blue);
+}
+
+/* end designed */
+/* --------------- */
+
+/* --------------- */
+/* start art */
+.art {
+  position: relative;
+}
+.art::before,
+.art::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  transform: translateY(-25%);
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+}
+.art::after {
+  background-image: url(./../assets/images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: 00% 75%;
+}
+.art::before {
+  border-radius: 0 120px 0 120px;
+  background: linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+}
+.art .art-content .info p {
+  color: var(--Grayish-blue);
+}
+@media (max-width: 991px) {
+  .art::before,
+  .art::after {
+    top: 50%;
+  }
+}
+.lab-img {
+  transform: translateX(-40%);
+}
+/* 
+*/
+/* end art */
+/* --------------- */
+/* --------------- */
+/* start footer */
+footer {
+  background-color: var(--Very-dark-black-blue);
+
+  color: var(--Grayish-blue);
+}
+
+footer .footer-content a:hover {
+  color: white !important;
+  text-decoration: underline;
+}
+/* end footer */
+/* --------------- */
